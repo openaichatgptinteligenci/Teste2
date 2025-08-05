@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login com Google – Charada Notas</title>
+
+  <!-- Google Identity Services -->
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+    h1 {
+      color: #333;
+      font-size: 24px;
+    }
+    #g_id_onload, #g_id_signin {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Login com Google – Charada Notas</h1>
+
+  <!-- Configuração do botão de login -->
+  <div id="g_id_onload"
+       data-client_id="449145321612-b71qr8v6otstfqemcmd9in31asvg4a0p.apps.googleusercontent.com"
+       data-context="signin"
+       data-ux_mode="redirect"
+       data-login_uri="https://openaichatgptinteligenci.github.io/Teste2"
+       data-auto_prompt="false">
+  </div>
+
+  <div class="g_id_signin"
+       data-type="standard"
+       data-shape="rectangular"
+       data-theme="outline"
+       data-text="sign_in_with"
+       data-size="large"
+       data-logo_alignment="left">
+  </div>
+</body>
+</html>
