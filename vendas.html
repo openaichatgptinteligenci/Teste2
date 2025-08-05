@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Área de Vendas – Charada Notas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .logout-btn {
+      background: #d9534f;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .logout-btn:hover {
+      background: #c9302c;
+    }
+
+    .produtos {
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .produto {
+      background: #f8f8f8;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .produto h3 {
+      margin: 10px 0;
+    }
+
+    .produto button {
+      background: #28a745;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .produto button:hover {
+      background: #218838;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Charada Notas – Loja</h1>
+    <button class="logout-btn" onclick="logout()">Sair</button>
+  </header>
+
+  <section class="produtos">
+    <div class="produto">
+      <h3>Produto 1</h3>
+      <p>R$ 49,90</p>
+      <button>Comprar</button>
+    </div>
+    <div class="produto">
+      <h3>Produto 2</h3>
+      <p>R$ 29,90</p>
+      <button>Comprar</button>
+    </div>
+    <div class="produto">
+      <h3>Produto 3</h3>
+      <p>R$ 99,90</p>
+      <button>Comprar</button>
+    </div>
+  </section>
+
+  <script>
+    function logout() {
+      // Redireciona para a tela de login
+      window.location.href = "index.html";
+    }
+  </script>
+
+</body>
+</html>
